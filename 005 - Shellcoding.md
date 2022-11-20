@@ -33,4 +33,16 @@ How to shellcode:
 
 Msfvenom: Shellcode generator
 
+![[Pasted image 20221118210630.png]]
 
+How to achieve NULL-free shellcode:
+1. Manually remove null bytes with other operations, such as  xor eax, eax.
+2. subtract 11111111 and then add back after
+	![[Pasted image 20221118211814.png]]
+3. Msfvenom to encode the shellcode:
+	1. ![[Pasted image 20221118212019.png]]
+	2. ![[Pasted image 20221118212042.png]]
+	3. Del 000a(new line) from python generated code
+	4. Specify bad char in Msfvenom with `-b` 
+	5. ![[Pasted image 20221118212228.png]]
+4. 
