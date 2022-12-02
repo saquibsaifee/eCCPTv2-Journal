@@ -18,3 +18,23 @@ Hash:
 	 3. Collision resistance: same pair of message with same hash
 
 ![[Pasted image 20221120203030.png]]
+
+
+**Windows passwords are stored in Security Accounts Manager (SAM) in Win 2000+**
+
+Passwords are stored in Hash format and is stored as LM(Lan Manager) and NT(New Technology) hash
+
+![[Pasted image 20221130211940.png]]
+![[Pasted image 20221130211947.png]]
+
+All passwords from windows 2000 are also stored in NT hashes.
+
+LM hashes are still computed and stored by default up to Windows Vista.
+
+These hashes are stored in the Windows SAM file located at: `C:\Windows\System32\config` But it is not accessible while the  OS is running.
+
+These values are also stored in the registry at `HKEY_LOCAL_MACHINE\SAM` again it is not accessible while the  OS is running and require System privileges.
+
+
+
+
