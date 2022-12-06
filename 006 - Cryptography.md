@@ -35,6 +35,8 @@ These hashes are stored in the Windows SAM file located at: `C:\Windows\System32
 
 These values are also stored in the registry at `HKEY_LOCAL_MACHINE\SAM` again it is not accessible while the  OS is running and require System privileges.
 
+Tools to dump hashes of the remote system:
+![[Pasted image 20221204212122.png]]
 
-
-
+Meterpreter shell: run hashdump
+dfs 
