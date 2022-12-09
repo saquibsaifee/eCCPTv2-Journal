@@ -39,7 +39,3 @@ Tools to dump hashes of the remote system:
 ![[Pasted image 20221204212122.png]]
 
 Meterpreter shell: run hashdump
-
-
-
-dsfasdfs
